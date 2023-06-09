@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 50%;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 60px;
+    background-color: brown;
+    color: #fff;
+}
+
+
+.p-tags{
+    margin-top: 40px;
+   
+}
+
+p{
+   
+    display: inline-block;
+    font-size: 50px;
+    
+}
+
+
+.buttons-container{
+    margin-top: 50px;
+   
+}
+
+button{
+   width: 80px;
+   height: 30px;
+   cursor: pointer;
+}
+
