@@ -23,12 +23,13 @@ function startTimer(){
   start.disabled = true // this will disable the start button once clicked
   
   clearStartInterval= setInterval(()=>{
-    parseFloat(milsec)
+    parseInt(milsec)
     milsec++
-    document.querySelector('.milliseconds').innerText = milsec
+    document.querySelector('.milliseconds').innerText = milsec.toString().padStart(2, '0')
     if(milsec === 99){
-      parseFloat(sec)
-      document.querySelector('.seconds').innerText = ++sec
+      parseInt(sec)
+      ++sec
+      document.querySelector('.seconds').innerText = sec.toString().padStart(2, '0')
       milsec = 0
       // clearInterval(startInterval)
       // startWatch()
@@ -40,13 +41,16 @@ function startTimer(){
 function stopTimer(){
   //This stops the setInterval from executing
   clearInterval(clearStartInterval)
+  start.disabled = false // this will enable the start button once clicked
 
 }
 
 //resetTimer functions
 function resetTimer(){
   //This reset the milliseconds and seconds to 00
+  stopTimer()
   document.querySelector('.milliseconds').innerText = '0' +0
   document.querySelector('.seconds').innerText = '0'+ 0;
+  start.disabled = false // this will enable the start button once clicked
  
 }

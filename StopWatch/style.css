@@ -23,7 +23,6 @@
 p{
    
     display: inline-block;
-    font-size: 50px;
     
 }
 
@@ -39,3 +38,13 @@ button{
    cursor: pointer;
 }
 
+.milliseconds .seconds{
+    width: 40px;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+
+}
