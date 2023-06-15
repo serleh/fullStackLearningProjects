@@ -6,7 +6,7 @@ const data = [
             '828m', '231m', '782m', '926m'
         ],
         key: '828m',
-        isMulti: false,
+        isMulti: true,
     },
     {
         question: 'What is the diameter of Burj',
@@ -62,21 +62,25 @@ function addOptions(){
     const questionHeading = bodyNode.querySelector('#questionHeading');
     const question = bodyNode.querySelector('#question');
     const options = bodyNode.querySelector('#options');
+    let input = document.querySelector('input')
+    
+    
+    console.log(input)
 
     questionHeading.innerText = 'Question 1';
     question.innerText = data[0].question;
     
     for (let i = 0; i < options.children.length; i++) {
         const element = options.children[i];
-        element.querySelector('label').innerText = data[0].options[i];
-        const inputDom = element.querySelector('input');
-        data[0].isMulti ? inputDom.type = "checkbox" : inputDom.type = "radio"
+        element.querySelector('label').innerText = data[0].options[i]
     }
-};
+}
 
+
+const next = document.addEventListener('click', nextQuestion)
 
 function nextQuestion(){
-    console.log('next')
+
 }
 
 function prevQuestion(){
