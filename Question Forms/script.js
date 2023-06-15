@@ -62,6 +62,7 @@ function addOptions(){
     const options = bodyNode.querySelector('#options');
     let input = document.querySelector('input')
     
+    
     console.log(input)
 
     questionHeading.innerText = 'Question 1';
@@ -83,8 +84,12 @@ function addOptions(){
 };
 
 
-function nextQuestion(){
+const next = document.addEventListener('click', nextQuestion)
 
+function nextQuestion(){
+   for(let d of data){
+   console.log(d)
+   }
 }
 
 function prevQuestion(){
