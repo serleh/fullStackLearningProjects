@@ -33,15 +33,69 @@ button{
     padding: 10px 20px;
 }
 
-/* .prev{
-    background-color: grey;
+#results{
+    width: 90dvw;
+    height: 100px;
+    background-color: coral;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.next{
-    background-color: blanchedalmond;
+#results.hide{
+    color: white;
+    display: none;
 }
 
-.sub {
-    background-color: green;
+#results.show{
+    color: white;
+    display: flex;
+}
 
-} */
+@keyframes successAnimation {
+    from {
+      transform: scale(1.5);
+    }
+  
+    to {
+        transform: scale(3.5);
+      
+    }
+  }
+
+    @keyframes errorAnimation {
+        /* move left and right */
+        0% {
+            transform: translateX(0px);
+        }
+        /* 25% {
+            transform: translateX(40px);
+        } */
+        50% {
+            transform: translateX(30px);
+        }
+        /* 75% {
+            transform: translateX(-40px);
+        } */
+        100% {
+            transform: translateX(-30px);
+        }
+    }
+  
+  .success span{
+    /* display: block; */
+    animation-duration: 0.1s;
+    animation-name: changewidth;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  .error span{
+    /* display: block; */
+    animation-duration: 1s;
+    animation-name: errorAnimation;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
