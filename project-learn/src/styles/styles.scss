@@ -1,0 +1,23 @@
+.container{
+    background-color: coral;
+    padding: 20px;
+    height: 90dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .count{
+        font-size: 8rem;
+    }
+
+    .controls{
+        margin-top: 30px;
+
+        button{
+            padding: 10px 30px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+}
