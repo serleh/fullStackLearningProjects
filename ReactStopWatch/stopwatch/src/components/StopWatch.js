@@ -19,7 +19,7 @@ function StopWatch() {
              else{
               Setseconds(prevSeconds => prevSeconds + 1)
              }
-        }, 1000);
+        }, 10);
         // doing cleanup
         return (()=>{
           clearInterval(intervalId)
