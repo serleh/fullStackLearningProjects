@@ -1,0 +1,49 @@
+@import 'login.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+nav{
+    background-color: #225f5f;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+
+}
+
+nav *{
+    padding: 10px;
+    .links{
+        color: #000;
+        text-decoration: none;
+    }   
+}
+footer{
+    background-color:#225f5f;
+    color: #fff;
+    margin-top: 500px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+footer div{
+    display: flex;
+    flex-direction: column;
+  
+
+    .links{
+        text-decoration: none;
+        color: #fff;
+        
+    }
+}

@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Boxes from './components/Boxes';
 import './Styles/styles.scss'
 import { Route, Routes} from 'react-router-dom'
+import Users from './components/Users';
 
 function App() {
   
@@ -16,6 +17,10 @@ function App() {
       < Route path='boxes' element={<Boxes/>}/>
       < Route path='randomnumber' element={<RandomNumberGenerator/>}/>
       < Route path='timer' element={<Timer/>}/>
+      < Route path='users' element={<Users/>}/>
+
+      < Route path='users/:userId' element={<Users/>}/>
+
      </Routes>
     </>
   );
