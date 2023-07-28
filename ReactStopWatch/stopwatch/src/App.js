@@ -5,17 +5,19 @@ import Timer from './components/Timer';
 import Navbar from './components/Navbar';
 import Boxes from './components/Boxes';
 import './Styles/styles.scss'
+import { Route, Routes} from 'react-router-dom'
 
 function App() {
   
   return (
-    <div className="App">
-     <Boxes/>
-       {/* <StopWatch/> */}
-       {/* <RandomNumberGenerator/> */}
-       {/* <Timer/> */}
-       
-    </div>
+    <>
+     <Routes>
+      < Route path='/' element={<StopWatch/>}/>
+      < Route path='boxes' element={<Boxes/>}/>
+      < Route path='randomnumber' element={<RandomNumberGenerator/>}/>
+      < Route path='timer' element={<Timer/>}/>
+     </Routes>
+    </>
   );
 }
 
