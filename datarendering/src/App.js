@@ -7,6 +7,7 @@ import Posts from "./Components/Pages/Posts";
 import Navbar from "./Components/Pages/Navbar";
 import './Styles/styles.scss'
 import Footer from "./Components/Pages/Footer";
+import PostsId from "./Components/Pages/PostsId";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="about-us" element={<About/>}/>
         <Route path="login" element={<Login/>}/>
         <Route path="posts" element={<Posts/>}/>
+        <Route path="posts/:userId" element={<PostsId/>}/>
       </Routes>
       <Footer/>
     </div>
